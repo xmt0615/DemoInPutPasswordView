@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF6FBA81C84208300B23525 /* MT_PasswordKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6FBA71C84208300B23525 /* MT_PasswordKeyboard.m */; };
 		459750561B2686C200728D1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 459750551B2686C200728D1D /* main.m */; };
 		459750591B2686C200728D1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 459750581B2686C200728D1D /* AppDelegate.m */; };
 		4597505C1B2686C200728D1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4597505B1B2686C200728D1D /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FF6FBA61C84208300B23525 /* MT_PasswordKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MT_PasswordKeyboard.h; sourceTree = "<group>"; };
+		1FF6FBA71C84208300B23525 /* MT_PasswordKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MT_PasswordKeyboard.m; sourceTree = "<group>"; };
 		459750501B2686C200728D1D /* DemoInPutPasswordView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoInPutPasswordView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459750541B2686C200728D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		459750551B2686C200728D1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 		4597507A1B2687B000728D1D /* InputView */ = {
 			isa = PBXGroup;
 			children = (
+				1FF6FBA61C84208300B23525 /* MT_PasswordKeyboard.h */,
+				1FF6FBA71C84208300B23525 /* MT_PasswordKeyboard.m */,
 				4597507B1B2687B000728D1D /* LMPopInputPasswordView.h */,
 				4597507C1B2687B000728D1D /* LMPopInputPasswordView.m */,
 			);
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4597505C1B2686C200728D1D /* ViewController.m in Sources */,
+				1FF6FBA81C84208300B23525 /* MT_PasswordKeyboard.m in Sources */,
 				459750851B26887C00728D1D /* WTReTextField.m in Sources */,
 				4597507D1B2687B000728D1D /* LMPopInputPasswordView.m in Sources */,
 				459750591B2686C200728D1D /* AppDelegate.m in Sources */,
@@ -458,6 +464,7 @@
 				459750751B2686C300728D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		459750761B2686C300728D1D /* Build configuration list for PBXNativeTarget "DemoInPutPasswordViewTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +473,7 @@
 				459750781B2686C300728D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

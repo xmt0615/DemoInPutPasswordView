@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LMPopInputPasswordView.h"
+#import "MT_PasswordKeyboard.h"
 
 @interface ViewController ()<LMPopInputPassViewDelegate>
 {
@@ -41,11 +42,22 @@
 }
 
 - (IBAction)showInputView:(UIButton *)sender {
-    _resultLabel.text = nil;
-    popView = [[LMPopInputPasswordView alloc]init];
-    popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-    popView.delegate = self;
-    [popView pop];
+//    _resultLabel.text = nil;
+//    popView = [[LMPopInputPasswordView alloc]init];
+//    popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
+//    popView.delegate = self;
+//    [popView pop];
+    [MT_PasswordKeyboard showKeyboardPasswordHandleBlock:^(NSUInteger index, NSString *text) {
+        if(index==1){
+            if(text.length==0){
+                NSLog(@"密码长度不正确");
+            }else if(text.length<6){
+                NSLog(@"密码长度不正确");
+            }else{
+                _resultLabel.text = text;
+            }
+        }
+    }];
 }
 
 #pragma mark ---LMPopInputPassViewDelegate
